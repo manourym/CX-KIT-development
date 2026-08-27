@@ -86,6 +86,35 @@ The creation of the KIT was done in close alignment with the [prostep ivip Smart
 
 > TODO: Describe the business value of this KIT and why it should be implemented
 
+## Use Cases
+
+### Geometrical Simulations
+
+**Description**: [Use case description]
+
+**Actors**: [Actor 1], [Actor 2], [Actor 3]
+
+**Process Flow**:
+
+1. [Step 1 description]
+2. [Step 2 description]
+3. [Step 3 description]
+
+**Business Outcomes**: [Key outcomes]
+
+**Success Metrics**: [Key metrics]
+
+### Causal / Acausal Simulation
+
+[Same structure as primary use case]
+
+### Additional Use Cases
+
+1. **[Use Case 3]**: [Brief description]
+2. **[Use Case 4]**: [Brief description]
+
+---
+
 ## Semantic Models / Data Model
 
 <!-- Reference the relevant semantic models, APIs, or standards. -->
