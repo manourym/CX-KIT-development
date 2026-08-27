@@ -1,5 +1,5 @@
 ---
-id: development-view-sandbox-kit-template
+id: development-view-engineering-simulation
 title: Development View
 description: 'Development View <KIT NAME> KIT'
 sidebar_position: 3
@@ -27,7 +27,7 @@ This logo is only visible when compiled with Docusarus (final version of the hos
 -->
 
 import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
-<Kit3DLogo kitId="<kit-id>" />
+<Kit3DLogo kitId="engineering-simulation" />
 
 <!--
 KIT LOGO END
@@ -91,7 +91,11 @@ graph LR
 This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 - SPDX-License-Identifier: CC-BY-4.0
-- SPDX-FileCopyrightText: [YYYY] [YOUR_COMPANY]
-- SPDX-FileCopyrightText: [YYYY] [ANOTHER_COMPANY]
-- SPDX-FileCopyrightText: [YYYY] Contributors to the Eclipse Foundation
+- SPDX-FileCopyrightText: 2026 Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. (represented by Fraunhofer IPK)
+- SPDX-FileCopyrightText: 2026 Schaeffler AG
+- SPDX-FileCopyrightText: 2026 Mercedes-Benz
+- SPDX-FileCopyrightText: 2026 German Aerospace Center (DLR)
+- SPDX-FileCopyrightText: 2026 Robert Bosch GmbH
+- SPDX-FileCopyrightText: 2026 Dräxlmaier GmbH & Co. KG
+- SPDX-FileCopyrightText: 2026 Contributors to the Eclipse Foundation
 - Source URL: [https://github.com/eclipse-tractusx/eclipse-tractusx.github.io](https://github.com/eclipse-tractusx/eclipse-tractusx.github.io)
