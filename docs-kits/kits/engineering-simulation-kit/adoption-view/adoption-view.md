@@ -72,12 +72,14 @@ The creation of the KIT was done in close alignment with the [prostep ivip Smart
 
 <!-- Describe the business process or domain this KIT addresses. If a use case describe the use case. -->
 
-![image-example](../resources/image-example.png)
+![Example of the Business process for thermal model exchange](../resources/Process_Example_ThermalModelExchange.png)
 
 > TODO: Describe the relevant business context and stakeholders.
 > We recommend diagrams in drawio (need to be stored in SVG), or you can use mermaid or plant uml
 > As described in TRG 1.04: https://eclipse-tractusx.github.io/docs/release/trg-1/trg-1-04
 > You can also include infografics/ images (which are not diagrams, like above)
+
+
 
 ## Business Value
 
