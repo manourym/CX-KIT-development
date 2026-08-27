@@ -33,11 +33,28 @@ import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
 KIT LOGO END
 -->
 
+:::info Target Audience
+Business Managers, Product Owners, Solution Architects, Industry Experts, and Decision Makers.
+:::
+
+---
+
 ## Introduction
 
 <!-- Describe what problem this KIT solves and who benefits from it. -->
 
-> TODO: Provide a short description of the KIT's purpose and scope.
+The Engineering Simulation KIT describes relevant use cases and approaches to support Simulations in the Engineering phase of a product, that require exchange in the data ecosystem, e.g. due to a supplier
+This includes for example
+
+- 1D simulations: where the variation is only in one direction e.g. heat transfer simulations under certain conditions
+- 2D simulations: where the variation is only in two different directions e.g. behavior of a flat surface
+- 3D simulations: Having variations in the full geometrical space, e.g. for complex geometries, curvatures etc.
+
+More than three dimensions where currently not represented in discussions but could be part of this KIT as well.
+
+The KIT shall give support in correctly describing boundary conditions and choosing the correct components and models for simulations that require input from other stakeholders in the network, or to provide simulations to other participants in the network properly. This also includes the credibility of the simulation model.
+
+The creation of the KIT was done in close alignment with the [prostep ivip SmartSE group](https://www.prostep.org/en/projects/smart-systems-engineering-smartse-gb) and may reference recommendations given by that group.
 
 ## Vision and Mission
 
