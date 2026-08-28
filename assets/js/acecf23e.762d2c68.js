@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkeclipse_tractusx_github_io=self.webpackChunkeclipse_tractusx_github_io||[]).push([["93220"],{101912(e){e.exports=JSON.parse('{"blogBasePath":"/CX-KIT-development/blog","blogTitle":"Blog","authorsListPath":"/CX-KIT-development/blog/authors"}')}}]);
