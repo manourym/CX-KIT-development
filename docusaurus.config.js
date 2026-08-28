@@ -9,9 +9,9 @@ const { generateKitNavItems } = require('./utils/generated/kitNavItems.js');
 const config = {
   title: 'Eclipse Tractus-X',
   tagline: '',
-  url: 'https://eclipse-tractusx.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
+  url: process.env.SITE_URL || 'https://eclipse-tractusx.github.io',
+  baseUrl: process.env.BASE_URL || '/',
+  onBrokenLinks: process.env.BASE_URL ? 'warn' : 'throw',
   onBrokenAnchors: 'throw',
   favicon: 'img/logo_tractus-x-min.ico',
 
