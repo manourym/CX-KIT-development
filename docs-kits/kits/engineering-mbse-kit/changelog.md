@@ -1,7 +1,7 @@
 ---
-id: changelog-sandbox-kit-template
+id: engineering-mbse-kit-changelog
 title: Changelog
-description: 'Changelog <KIT NAME> KIT'
+description: Changelog MBSE KIT
 sidebar_position: 1
 ---
 

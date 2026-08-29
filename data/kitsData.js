@@ -94,6 +94,7 @@ import ModularEngineeringKITLogo from "@site/static/img/kits/modular-engineering
 import ModularProductionLogo from "@site/static/img/kits/modular-production/modular-production-kit-raw-logo.svg";
 import OSIMKitLogo from "@site/static/img/kits/osim/osim-kit-raw-logo.svg";
 import RequirementsKitLogo from "@site/static/img/kits/requirements/requirements-kit-raw-logo.svg";
+import MBSEKitLogo from "@site/static/img/kits/engineering-mbse/engineering-mbse-kit-raw-logo.svg";
 import SupplyChainDisruptionLogo from "@site/static/img/kits/supply-chain-disruption-notification/supply-chain-disruption-notification-kit-raw-logo.svg";
 import AgentsKitLogo from "@site/static/img/kits/agents/agents-kit-raw-logo.svg";
 import BehaviorTwinKitLogo from "@site/static/img/kits/behavior-twin/behavior-twin-kit-raw-logo.svg";
@@ -1017,6 +1018,39 @@ export const kitsData = {
         new: false
       }
     },
+        {
+      id: 'engineering-mbse',
+      name: 'MBSE KIT',
+      logo: RequirementsKitLogo,
+      logoLicencse: {
+        type: 'CC-BY-4.0',
+        authors: '2026 Eclipse Tractus-X Contributors',
+        licenseUrl: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/blob/main/static/img/kits/requirements/requirements-kit-raw-logo.svg.license',
+        sourceUrl: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/blob/main/static/img/kits/requirements/requirements-kit-raw-logo.svg'
+      },
+      logoHeight: 100,
+      logoWidth: 100,
+      route: '/docs-kits/kits/engineering-mbse-kit/adoption-view',
+      colors: {
+        primary: '#e4a4de',
+        gradient: 'linear-gradient(135deg, #e4a4de 0%, #ac23a7 100%)'
+      },
+      maturity: {
+        currentLevel: 'Sandbox',
+        graduationStatus: 'draft'
+      },
+      deprecated: false,
+      domain: 'Engineering',
+      industries: ['automotive'],
+      description: 'Cross Ecosystem Systems Engineering with modeling support for a better integrated system realization.',
+      metadata: {
+        created: '2026-08-29',
+        lastUpdated: '2026-08-29',
+        latestVersion: '0.1.0',
+        new: false
+      }
+    },
+
     {
       id: 'geometry',
       name: 'GEOMETRY KIT',

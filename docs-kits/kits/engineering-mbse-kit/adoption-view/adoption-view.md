@@ -1,8 +1,9 @@
 ---
-id: adoption-view
+id: engineering-mbse-kit-adoption-view
 title: Adoption View
-description: '<KIT NAME> KIT'
+description: MBSE KIT
 sidebar_position: 2
+domain: engineering
 ---
 
 <!--
@@ -27,7 +28,7 @@ This logo is only visible when compiled with Docusarus (final version of the hos
 -->
 
 import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
-<Kit3DLogo kitId="<kit-id>" />
+<Kit3DLogo kitId="engineering-mbse" />
 
 <!--
 KIT LOGO END
