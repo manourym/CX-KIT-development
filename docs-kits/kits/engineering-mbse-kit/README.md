@@ -3,15 +3,6 @@
 > **⚠️ Remove this file before publishing!**
 
 
-## 3. Replace `YYYY` with the Current Year
-
-The changelog uses `YYYY` as a placeholder for the release year. Replace it with the actual year (e.g. `2026`).
-
-```bash
-# macOS / Linux
-grep -rl 'YYYY' . | xargs sed -i '' 's/YYYY/2026/g'
-```
-
 ## 4. Fill in the TODOs
 
 Each view file contains `TODO` blocks that describe what content is expected. Work through them top to bottom and replace them with your KIT's actual content.
