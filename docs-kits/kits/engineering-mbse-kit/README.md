@@ -2,36 +2,6 @@
 
 > **⚠️ Remove this file before publishing!**
 
-This template is the starting point for a new Sandbox or MVP-level KIT.
-Follow the steps below to get started.
-
-Information of requirements can be found here: https://eclipse-tractusx.github.io/documentation/kit-lifecycle#-1-sandbox-level-mvp-kit
-
----
-
-## 1. Copy and Rename
-
-```bash
-# From the docs-kits/kits/ directory
-cp -r ../kit-template/sandbox ./<kit-id>-kit
-cd <kit-id>-kit
-```
-
-## 2. Replace `<kit-id>` Everywhere
-
-Search all files in your new folder and replace every occurrence of `<kit-id>` with your actual KIT identifier (e.g. `my-service`).
-
-```bash
-# macOS / Linux
-grep -rl '<kit-id>' . | xargs sed -i '' 's/<kit-id>/my-service/g'
-```
-
-Or use your IDE `CTRL + F` to find and replace in a file.
-
-This placeholder appears in:
-- Frontmatter `id:` and `title:` fields
-- Internal links and slugs
-- The `Kit3DLogo` component attribute `kitId="<kit-id>"`
 
 ## 3. Replace `YYYY` with the Current Year
 
