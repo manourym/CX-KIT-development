@@ -65,6 +65,26 @@ For that purpose, a Digital Twin per supplier is required. This requires updatin
 
 ![PartType per Supplier](resources/digital-twins-in-engineering_multipletwins.excalidraw.svg)
 
+## Digital Twins without defined physical asset
+
+Especially in the Requirements Engineering phase there is the possibility, that the requirements shall be defined for a functionality in a component, for which one or multiple components / systems are required. For this use case, ``PartType`` is no longer usable. An example is the definition of an entertainment system on functional level which is outsourced without knowing the actual realization of it. For that, the Engineering domain defined the concept of ``PartRole``. 
+
+:::note[Link to Model-Based Systems Engineering (MBSE)]
+This topic is relevant in more Engineering contexts if there is the concept of systems and subystems on different abstraction levels required.
+In the current productive usage this is only applied in the companies themselves and not in the ecosytem but is currently under investigation in the engineering domain with a dedicated MBSE KIT being planned.
+:::
+
+:::warning[Active development]
+This section is presenting work under active development. Currently there have been no realizations of ``PartRole`` Twins and there is currently no standard written.  IDTA follows a similar concept in the [AssetKind Definition](https://industrialdigitaltwin.io/aas-specifications/IDTA-01001/v3.1.1/spec-metamodel/core.html#AssetKind) but also did not show use cases yet.
+:::
+
+The following example shows a possible interaction between different system levels:
+
+- The abstract _entertainment system_ is defined as customer level as ``PartRole`` 
+- The customer defines possible realizations through different components (e.g. a _speakers_ and _HMI_ from Supplier 1 and a _Lighting System_ from supplier 2) or complete subsystems (_entertainment system_ from supplier 3)
+- The subsystem _Entertainment system_ from supplier 3 is also integrating components from Supplier 1 and 2, which are not seen by the customer due to the 1up-1down policy - ecosystem wide skills could still build on this approach if allowed.
+
+![Part Role example](resources/digital-twins-in-engineering_partrole.excalidraw.svg)
 
 ## NOTICE
 
