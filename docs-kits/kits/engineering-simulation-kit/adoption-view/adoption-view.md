@@ -33,7 +33,7 @@ import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
 KIT LOGO END
 -->
 
-:::info Target Audience
+:::info[Target Audience]
 Business Managers, Product Owners, Solution Architects, Industry Experts, and Decision Makers.
 :::
 
@@ -63,13 +63,35 @@ The creation of the KIT was done in close alignment with the [prostep ivip Smart
 
 > TODO: Describe the vision of this KIT. Problem statement
 
+Currently some simulation models that are created on request (e.g. in a customer supplier interaction) require a lot of interaction between these stakeholders to gather the context, the relevant simulation environment or required inputs and test cases. This hinders automation and requires larger efforts in alignment from both supplier and customer. To allow tool-integration and support automation, there needs to be a machine-readable format to directly specify and later on also describe the realized simulation models. But not only the format is relevant - also the trust of the models, there capabilities and the collaborating stakeholder is of utmost importance. Thus the topics of data trust and security as well as crediblity need to be considered.    
+
+:::info[VISION]
+There needs to be a solution to automatically provide specifications and realizations of simulation models context in a machine readable and trusted way to relevant business partners
+::: 
+
 ## Mission
 
 > TODO: Describe the mission of this KIT. Solution statement
 
+This KIT shall support the Simulation Use Case in Collaborative Engineering in Data Ecosystems by addressing multiple points:
+
+- Describe a common business context for Simulations within Collaborative Engineering in Data Ecosystems
+- Explain Terminology for the use cases
+- Distinguish different use cases in Simulation to consider
+- Explain where data Ecosystems such as Catena-X can actually add benefits to the Simulation use case
+- Explain how to apply the Simulation Use Case and how to gain and verify trust and credibility
+
+:::info[MISSION]
+The Engineering simulation KIT shall enable the automated and trusted exchange of relevant information for the creation and application of simulation models. 
+::: 
+
+For now, the KIT will not focus on the exchange of the simulation itself.
 ## Business Context
 
 <!-- Describe the business process or domain this KIT addresses. If a use case describe the use case. -->
+
+The KIT focuses on the Engineering phase of a product or other form of asset and thus the early realization of it. It addresses the simulation before a product was created or handed over to another company in a supplier-customer-relationship.
+
 
 ![Example of the Business process for thermal model exchange](../resources/Process_Example_ThermalModelExchange.png)
 
