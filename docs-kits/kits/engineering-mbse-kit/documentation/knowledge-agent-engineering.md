@@ -74,3 +74,13 @@ While the concept is promising, the current technical implementation of the Know
 - The submodels defined in engineering are **not directly usable** in the Knowledge Agent approach, as it uses ontologies to describe assets instead of submodels. It is also not directly using AAS and conflicts partly with CX-0002.
 - There is currently **no productive use case** that builds on the skill approach. While it offers great potential (e.g. offering a skill to query all requirements related to a component), it is not widely tested under current conditions.
 - The KIT is currently **not actively maintained** — no expert group or committee is actively addressing a use case, and the components are not being updated.
+
+## NOTICE
+
+This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/legalcode).
+
+- SPDX-License-Identifier: CC-BY-4.0
+- SPDX-FileCopyrightText: 2026 Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. (represented by Fraunhofer IPK)
+- SPDX-FileCopyrightText: 2026 Mercedes-Benz
+- SPDX-FileCopyrightText: 2026 Contributors to the Eclipse Foundation
+- Source URL: [https://github.com/eclipse-tractusx/eclipse-tractusx.github.io](https://github.com/eclipse-tractusx/eclipse-tractusx.github.io)
