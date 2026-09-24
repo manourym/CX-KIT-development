@@ -1021,7 +1021,7 @@ export const kitsData = {
         {
       id: 'engineering-mbse',
       name: 'MBSE KIT',
-      logo: RequirementsKitLogo,
+      logo: RequirementsKitLogo, //until an MBSE logo was created
       logoLicencse: {
         type: 'CC-BY-4.0',
         authors: '2026 Eclipse Tractus-X Contributors',
