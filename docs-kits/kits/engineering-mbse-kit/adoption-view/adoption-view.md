@@ -41,6 +41,12 @@ KIT LOGO END
 
 > TODO: Provide a short description of the KIT's purpose and scope.
 
+**Model-Based Systems Engineering (MBSE)** is a engineering approach for the realization of complex systems that places **models** — rather than documents — at the center. Instead of
+describing a system primarily through text-based specifications, drawings, and paper documents, MBSE uses formal, structured, and machine-readable models as the primary source of truth for capturing, analyzing, and communicating a system's requirements, architecture, behavior, and
+structure throughout its entire lifecycle.
+
+Usually this is applied by internal development teams. With the rising complexity in the stakeholder collaboration MBSE might also help in supporting the collaborative engineering. This KIT is meant to support in understanding where MBSE can be useful in Collaborative Engineering in Data Ecosystems and where not.
+
 ## Vision and Mission
 
 <!-- What is the long-term goal? What does the KIT deliver today? Problem statatement -->
