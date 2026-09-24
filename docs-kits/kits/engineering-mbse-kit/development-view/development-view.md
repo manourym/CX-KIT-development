@@ -174,7 +174,7 @@ Each referenced KIT contributes a distinct specification to an integrated MBSE a
 
 | KIT | What it specifies for the integrated MBSE application |
 | --- | --------------------------------------- |
-| [Requirements KIT](../../requirements-kit/adoption-view.md) | The data model and APIs for managing requirements, their structure, and traceability across partners. Provides the requirements against which the system of interest is developed and later on verified. |
+| [Requirements KIT](../../requirements-kit/adoption-view/adoption-view.md) | The data model and APIs for managing requirements, their structure, and traceability across partners. Provides the requirements against which the system of interest is developed and later on verified. |
 | Engineering Simulation KIT (under development) | The data model and APIs for specifying simulation models. It does not focus on the exchange or execution itself but only on the description of the simulation models. |
 | [Geometry KIT](../../geometry-kit/adoption-view.md) | The data model and APIs for geometric data (CAD/STEP) to check the geometrical realization of the system against its geometrical requirements. |
 
@@ -228,7 +228,7 @@ sequenceDiagram
     App->>App: Evaluate requirements fulfillment
 ```
 
-This sequence integrates both System definition and Requirement Engineering based on the [Requirements KIT](../../requirements-kit/adoption-view.md) as well as the specification, creation and consumption of a simulation model based on the Engineering Simulation KIT. This approach currently considers only a 1:1 relationship - the approach can be extended based on the number of involved consumers and suppliers.
+This sequence integrates both System definition and Requirement Engineering based on the [Requirements KIT](../../requirements-kit/adoption-view/adoption-view.md) as well as the specification, creation and consumption of a simulation model based on the Engineering Simulation KIT. This approach currently considers only a 1:1 relationship - the approach can be extended based on the number of involved consumers and suppliers.
 
 :::info[Simulation Model exchange]
 Currently the simulation model exchange is documented as direct access from the application.
@@ -240,7 +240,7 @@ As long as there is no standard defining the exchange, this should be directly h
 
 MBSE is not a single domain, but a transdisciplinary approach. Thus there are no tools that can solve everything in one application. In the same way there should be no API only for MBSE, but applications for MBSE should use the APIs of the domain-specific applications. Therefore, for specific APIs, the KITs should be considered:
 
-- [Requirements KIT — Software Development View](../../requirements-kit/software-development-view.md)
+- [Requirements KIT — Development View](../../requirements-kit/development-view/development-view.md)
 - [Geometry KIT — Software Development View](../../geometry-kit/software-development-view.md)
 - [Knowledge Agent KIT — Software Development View](../../knowledge-agents-kit/software-development-view/api.md)
 - Simulation KIT
