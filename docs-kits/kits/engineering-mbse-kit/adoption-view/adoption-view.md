@@ -83,25 +83,18 @@ Mission of the MBSE KIT is making the **application of MBSE in collaborative eng
 
 ## Business Context
 
-<!-- Describe the business process or domain this KIT addresses. If a use case describe the use case. -->
+While usually MBSE focuses on the architectural realization of systems this KIT follows a more integrative approach: It focuses on the *transdisciplinary realization of systems* thus integrating all different domains active in the realization of that system of interest.
+While these domains are sometimes in different organizations in the network (e.g. a customer want to realize a complete vehicle and uses the requires simulation and CAD stakeholders from a gearbox supplier) the approach is considered ecosystem wide: System Definition (including Requirements Engineering), Realization and Validation is considered an integrated task.
 
-While usually MBSE focuses on the architectural realization of 
-This KIT focuses on system realization in a complex ecosystem where systems 
-
-In that way, MBSE links:
+For that, the KIT integrates different other KITs that are required to achieve that goal.
+These include (but are not limited to):
 
 - [Requirements KIT](../../requirements-kit/adoption-view.md)
 - Engineering Simulation KIT
+- [Geometry KIT](../../geometry-kit/adoption-view.md)
+- [Knowledge Agent KIT](../../knowledge-agents-kit/adoption-view/intro.md)
 
 Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD)
-
-
-![image-example](../resources/image-example.png)
-
-> TODO: Describe the relevant business context and stakeholders.
-> We recommend diagrams in drawio (need to be stored in SVG), or you can use mermaid or plant uml
-> As described in TRG 1.04: https://eclipse-tractusx.github.io/docs/release/trg-1/trg-1-04
-> You can also include infografics/ images (which are not diagrams, like above)
 
 ## Business Value
 
