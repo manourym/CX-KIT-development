@@ -42,11 +42,11 @@ KIT LOGO END
 
 > TODO: Provide a short description of the KIT's purpose and scope.
 
-**Model-Based Systems Engineering (MBSE)** is a engineering approach for the realization of complex systems that places **models** — rather than documents — at the center. Instead of
+**Model-Based Systems Engineering (MBSE)** is an engineering approach for the realization of complex systems that places **models** — rather than documents — at the center. Instead of
 describing a system primarily through text-based specifications, drawings, and paper documents, MBSE uses formal, structured, and machine-readable models as the primary source of truth for capturing, analyzing, and communicating a system's requirements, architecture, behavior, and
 structure throughout its entire lifecycle.
 
-Usually this is applied by internal development teams. With the rising complexity in the stakeholder collaboration MBSE might also help in supporting the collaborative engineering. This KIT is meant to support in understanding where MBSE can be useful in Collaborative Engineering in Data Ecosystems and where not.
+Usually this is applied by internal development teams. With the rising complexity in the stakeholder collaboration, MBSE might also help in supporting the collaborative engineering. This KIT is meant to support in understanding where MBSE can be useful in Collaborative Engineering in Data Ecosystems and where not.
 
 ## Vision and Mission
 
@@ -60,7 +60,7 @@ trace decisions across the entire value chain.
 Additionally, in the engineering phase there is often a complex dependency between multiple system elements that compose to an integrated system (e.g. a vehicle being an aggregation of different subsystems such as entertainment system and drive system which again can also be decomposed into subsystems across the data ecosystem). These system elements can be scattered across the data ecosystem making it even harder to take system wide decisions such as engineering changes.
 
 :::info[Vision]
-Our vision is an **common, system-focused, model-based foundation for collaborative engineering in data
+Our vision is a **common, system-focused, model-based foundation for collaborative engineering in data
 ecosystems**. With this foundation system development can happen in data-sovereign and still integrated ways
 :::
 
@@ -74,18 +74,18 @@ Concretely, the KIT provides:
 - **Standardized artifacts** -- data models and reference architectures that partners can directly use to structure and exchange their relevant system engineering information.
 - **Procedures and best practices** -- guidance on how to establish and operate model-based collaboration across company boundaries.
 - **Use Case Explanations** -- Supporting in the differentiation where to apply and where not to apply MBSE in collaborative Engineering approaches in data ecosystems.
-- **A shared terminology** -- a common glossary explaining the core and terms of MBSE allowing a better understanding for the usability in data ecosystems.
+- **A shared terminology** -- a common glossary explaining the core concepts and terms of MBSE allowing a better understanding for the usability in data ecosystems.
 
 In doing so, the KIT makes it possible for organizations to collaborate on complex systems in a data ecosystem without each partner having to reinvent its own approach — enabling faster, more consistent, and more traceable cross-company systems engineering.
 
 :::info[Mission]
-Mission of the MBSE KIT is making the **application of MBSE in collaborative engineering cases** understandble in sense of requirements and possibilities. Additionally, it shall link the various KIT relevant for MBSE so that it is **integrating all relevant aspects for system realization in data ecosystem**.
+Mission of the MBSE KIT is making the **application of MBSE in collaborative engineering cases** understandable in sense of requirements and possibilities. Additionally, it shall link the various KITs relevant for MBSE so that it is **integrating all relevant aspects for system realization in data ecosystems**.
 :::
 
 ## Business Context
 
 While usually MBSE focuses on the architectural realization of systems this KIT follows a more integrative approach: It focuses on the *transdisciplinary realization of systems* thus integrating all different domains active in the realization of that system of interest.
-While these domains are sometimes in different organizations in the network (e.g. a customer want to realize a complete vehicle and uses the requires simulation and CAD stakeholders from a gearbox supplier) the approach is considered ecosystem wide: System Definition (including Requirements Engineering), Realization and Validation is considered an integrated task.
+While these domains are sometimes in different organizations in the network (e.g. a customer wants to realize a complete vehicle and uses the required simulation and CAD stakeholders from a gearbox supplier) the approach is considered ecosystem wide: System Definition (including Requirements Engineering), Realization and Validation is considered an integrated task.
 
 For that, the KIT integrates different other KITs that are required to achieve that goal.
 These include (but are not limited to):
@@ -115,7 +115,7 @@ Additionally, which is not defined as an own KIT but of utmost importance is the
 
 <!-- Reference the relevant semantic models, APIs, or standards. -->
 
-Some of the relevant relevant data models are currently still under development
+Some of the relevant data models are currently still under development
 
 > TODO: Link or describe the data model, when using big payloads or json-schemas use expandable sections like below:
 
