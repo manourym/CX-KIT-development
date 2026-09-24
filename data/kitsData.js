@@ -1018,6 +1018,38 @@ export const kitsData = {
         new: false
       }
     },
+        {
+      id: 'engineering-simulation',
+      name: 'ENGINEERING SIMULATION KIT',
+      logo: RequirementsKitLogo, //until a logo has been defined
+      logoLicencse: {
+        type: 'CC-BY-4.0',
+        authors: '2026 Eclipse Tractus-X Contributors',
+        licenseUrl: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/blob/main/static/img/kits/requirements/requirements-kit-raw-logo.svg.license',
+        sourceUrl: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/blob/main/static/img/kits/requirements/requirements-kit-raw-logo.svg'
+      },
+      logoHeight: 100,
+      logoWidth: 100,
+      route: '/docs-kits/kits/requirements-kit/adoption-view',
+      colors: {
+        primary: '#e4a4de',
+        gradient: 'linear-gradient(135deg, #e4a4de 0%, #ac23a7 100%)'
+      },
+      maturity: {
+        currentLevel: 'Sandbox',
+        graduationStatus: 'draft'
+      },
+      deprecated: false,
+      domain: 'Engineering',
+      industries: ['automotive'],
+      description: 'Supporting Cross-company simulation model definition and provisioning in the engineering phase.',
+      metadata: {
+        created: '2026-09-29',
+        lastUpdated: '2026-09-29',
+        latestVersion: '0.1.0',
+        new: false
+      }
+    },
     {
       id: 'geometry',
       name: 'GEOMETRY KIT',
