@@ -53,11 +53,33 @@ Usually this is applied by internal development teams. With the rising complexit
 
 ## Vision
 
-> TODO: Describe the vision of this KIT. Problem statement
+When multiple organizations — OEMs, suppliers, and engineering partners — collaborate on a complex system, they must exchange and align requirements, architectures, and interfaces across organizational boundaries. Today, this collaboration is hampered by heterogeneous tools, inconsistent terminology, and incompatible data formats. Each partner maintains its own models and documents, making it difficult to establish a shared understanding of the system and to
+trace decisions across the entire value chain.
+
+Additionally, in the engineering phase there is often a complex dependency between multiple system elements that compose to an integrated system (e.g. a vehicle being an aggregation of different subsystems such as entertainment system and drive system which again can also be decomposed into subsystems across the data ecosystem). These system elements can be scattered across the data ecosystem making it even harder to take system wide decisions such as engineering changes.
+
+:::info[Vision]
+Our vision is an **common, system-focused, model-based foundation for collaborative engineering in data
+ecosystems**. With this foundation system development can happen in data-sovereign and still integrated ways
+:::
 
 ## Mission
 
-> TODO: Describe the mission of this KIT. Solution statement
+The mission of this KIT is to **equip the different stakeholders of a data ecosystem with the data models, architectures, procedures, and terms they need to realize complex systems collaboratively**. It delivers a practical, actionable foundation that organizations can adopt to move from document-based, fragmented cross-company collaboration toward a shared, model-based way of working.
+
+Concretely, the KIT provides:
+
+- **Guidance for stakeholders** -- clear explanations of the roles involved in collaborative engineering and how each of them contributes to and benefits from the data ecosystem wide application of a model-based systems engineering approach.
+- **Standardized artifacts** -- data models and reference architectures that partners can directly use to structure and exchange their relevant system engineering information.
+- **Procedures and best practices** -- guidance on how to establish and operate model-based collaboration across company boundaries.
+- **Use Case Explanations** -- Supporting in the differentiation where to apply and where not to apply MBSE in collaborative Engineering approaches in data ecosystems.
+- **A shared terminology** -- a common glossary explaining the core and terms of MBSE allowing a better understanding for the usability in data ecosystems.
+
+In doing so, the KIT makes it possible for organizations to collaborate on complex systems in a data ecosystem without each partner having to reinvent its own approach — enabling faster, more consistent, and more traceable cross-company systems engineering.
+
+:::info[Mission]
+Mission of the MBSE KIT is making the **application of MBSE in collaborative engineering cases** understandble in sense of requirements and possibilities. Additionally, it shall link the various KIT relevant for MBSE so that it is **integrating all relevant aspects for system realization in data ecosystem**.
+:::
 
 ## Business Context
 
