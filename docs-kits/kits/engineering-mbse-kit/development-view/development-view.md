@@ -34,8 +34,8 @@ import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
 KIT LOGO END
 -->
 
-:::info[Target Audience] 
-Software Developers, Solution Architects, Technical Leads, API Developers, Integration Engineers. 
+:::info[Target Audience]
+Software Developers, Solution Architects, Technical Leads, API Developers, Integration Engineers.
 :::
 
 ## Architecture Overview
@@ -43,7 +43,6 @@ Software Developers, Solution Architects, Technical Leads, API Developers, Integ
 Model Based Systems Engineering is an approach that bridges the gap between different domains, making it a *transdisciplinary approach for system realization*. In the same way, the architecture for the technical realization of MBSE in Collaborative Engineering environments in data ecosystems has to be integrative rather than a standalone solution.
 
 The MBSE KIT therefore does not define a single monolithic application. Instead, it describes how an **integrated MBSE / engineering application** can be built by implementing and consuming the specifications of several Catena-X KITs.
-
 
 The following diagram shows the high-level architecture of an integrated MBSE application. It implements the data models and calls the APIs specified by the referenced KITs, and it exchanges data through the common Catena-X infrastructure (EDC, Digital Twin Registry, Submodel Service).
 
