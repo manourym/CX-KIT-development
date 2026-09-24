@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkeclipse_tractusx_github_io=self.webpackChunkeclipse_tractusx_github_io||[]).push([["50327"],{31903(e){e.exports=JSON.parse('{"tags":[{"label":"excalidraw","permalink":"/CX-KIT-development/docs-kits/next/tags/excalidraw","count":3}]}')}}]);

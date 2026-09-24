@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkeclipse_tractusx_github_io=self.webpackChunkeclipse_tractusx_github_io||[]).push([["83880"],{394531(e){e.exports=JSON.parse('{"metadata":{"permalink":"/CX-KIT-development/blog","page":1,"postsPerPage":10,"totalPages":4,"totalCount":40,"nextPage":"/CX-KIT-development/blog/page/2","blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
