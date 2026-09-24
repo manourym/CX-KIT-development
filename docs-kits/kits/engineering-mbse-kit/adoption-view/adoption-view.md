@@ -28,6 +28,7 @@ This logo is only visible when compiled with Docusarus (final version of the hos
 -->
 
 import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
+import RelatedKitsGallery from '@site/src/components/2.0/RelatedKitsGallery';
 
 <Kit3DLogo kitId="engineering-mbse" />
 
@@ -89,10 +90,18 @@ While these domains are sometimes in different organizations in the network (e.g
 For that, the KIT integrates different other KITs that are required to achieve that goal.
 These include (but are not limited to):
 
-- [Requirements KIT](../../requirements-kit/adoption-view.md)
-- Engineering Simulation KIT
-- [Geometry KIT](../../geometry-kit/adoption-view.md)
-- [Knowledge Agent KIT](../../knowledge-agents-kit/adoption-view/intro.md)
+<RelatedKitsGallery
+  kitIds={['requirements', 'geometry', 'agents']}
+  extraKits={[
+    {
+      name: 'Engineering Simulation KIT',
+      description: 'Simulation-based realization & validation',
+      icon: '🧪',
+      chip: 'In Development',
+      route: undefined
+    }
+  ]}
+/>
 
 Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD)
 
