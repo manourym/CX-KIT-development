@@ -103,48 +103,47 @@ These include (but are not limited to):
   ]}
 />
 
-Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD)
+Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD).
+This master data is meant to include all relevant data for a an asset including product, material and 3D related data.  
 
 ## Business Value
 
 <!-- Describe why this KIT is attractive for service providers to be implemented -->
 
-> TODO: Describe the business value of this KIT and why it should be implemented
+Adopting this KIT enables organizations to move from fragmented, document-based cross-company collaboration toward a shared, model-based way of working. The concrete business value it delivers includes:
+
+- **Reduced integration effort** -- standardized data models and reference architectures allow partners to exchange system engineering information without building bespoke point-to-point interfaces for every collaboration.
+- **Faster cross-company engineering** -- a common, system-focused foundation lets OEMs, suppliers, and engineering partners align requirements, architectures, and interfaces more quickly, shortening time-to-market for complex systems.
+- **Improved traceability and decision-making** -- a shared model-based source of truth makes it possible to trace decisions across the entire value chain and to take system-wide decisions (e.g. engineering changes) even when system elements are scattered across the data ecosystem.
+- **Data-sovereign collaboration** -- the KIT enables integrated system development while preserving each partner's data sovereignty, allowing organizations to collaborate without giving up control over their own data.
+- **New business opportunities for service providers** -- the KIT clarifies the roles and procedures for collaborative engineering, enabling service providers to offer simulation, CAD, requirements engineering, and validation services across organizational boundaries.
+
+:::info[Business Value]
+In short, the KIT turns collaborative systems engineering in data ecosystems from a costly, error-prone, document-driven effort into a **standardized, traceable, and data-sovereign process** that benefits every stakeholder in the value chain.
+:::
 
 ## Semantic Models / Data Model
 
 <!-- Reference the relevant semantic models, APIs, or standards. -->
 
-Some of the relevant data models are currently still under development
+Some of the relevant data models are currently still under development. What can be used is:
 
-> TODO: Link or describe the data model, when using big payloads or json-schemas use expandable sections like below:
-
-<details>
-  <summary>Semantic Model Example - click to expand</summary>
-
-Place here the description of your semantic model.
-
-```json
-{
-  "key": "value",
-  "object": {...},
-  "array": [...]
-}
-```
-
-</details>
+| urn | Domain | Description | Link |
+| --- | ------- | ---------- | ---- |
+| ``urn:samm:io.catenax.requirement:1.0.0`` | Requirements | Currently standardized model ([CX-0155](https://catenax-ev.github.io/docs/standards/CX-0155-RequirementsEngineering)) to describe Requirements. | [tractusx/sldt](https://github.com/eclipse-tractusx/sldt-semantic-models/blob/main/io.catenax.requirement/1.0.0/Requirement.ttl) |
+| ``urn:samm:io.catenax.requirements:2.0.0`` | Requirements | Active development of the Requirements model under review for describing multiple requirements and their relationship. | [manourym/sldt (CX MBSE Expert Group Working Fork)](https://github.com/manourym/sldt-semantic-models/blob/requirement2.0.0/io.catenax.requirements/2.0.0/Requirements.ttl) |
+| ``urn:samm:io.catenax.digital_engineering_master_data:1.0.0`` | Requirements | Active development of the Requirements model under review for describing multiple requirements and their relationship. | [tractusx/sldt](https://github.com/eclipse-tractusx/sldt-semantic-models/blob/main/io.catenax.digital_engineering_master_data/1.0.0/DigitalEngineeringMasterData.ttl) |
 
 ## Standards
 
-<!-- Provide a list of standards this KIT. -->
-
-> TODO: Add the standards or external documetantion
+This is an excerpt of currently relevant standards for MBSE in data ecosystems.
 
 | Name | Description | Link to standard |
 | ---- | ----------- | ---------------------- |
-| `CX-160` | This protocol is important when doing the data exchange | [example-link](https://cx-example.com) |
-| `FX-XXXX` | This protocol is important when doing a vertical integration with shop floor machinery | [example-link](https://fx-example.com) |
-| `ISO XXXX:XXXX` | This protocol is used as | [example-link](https://iso-example.com) |
+| `CX-0154` | Catena-X Standard for Digital Engineering Master Data (DEMD) | [CX-0154](https://catenax-ev.github.io/docs/standards/CX-0154-MasterDataManagement) |
+| `CX-0155` | Catena-X Standard for Requirements Engineering | [CX-0155](https://catenax-ev.github.io/docs/standards/CX-0155-RequirementsEngineering) |
+| `CX-0156` | Catena-X Standard for Geometries | [CX-0156](https://catenax-ev.github.io/docs/standards/CX-0156-Geometry) |
+| `SysML v2` | Specification for Systems Modeling Language (SysML) v2 | [OMG SysML v2](https://www.omg.org/spec/SysML) |
 
 ## NOTICE
 
