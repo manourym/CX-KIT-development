@@ -85,6 +85,17 @@ Mission of the MBSE KIT is making the **application of MBSE in collaborative eng
 
 <!-- Describe the business process or domain this KIT addresses. If a use case describe the use case. -->
 
+While usually MBSE focuses on the architectural realization of 
+This KIT focuses on system realization in a complex ecosystem where systems 
+
+In that way, MBSE links:
+
+- [Requirements KIT](../../requirements-kit/adoption-view.md)
+- [Engineering Simulation KIT](../../engineering-simulation-kit/adoption-view/adoption-view.md)
+
+Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD)
+
+
 ![image-example](../resources/image-example.png)
 
 > TODO: Describe the relevant business context and stakeholders.
@@ -101,6 +112,8 @@ Mission of the MBSE KIT is making the **application of MBSE in collaborative eng
 ## Semantic Models / Data Model
 
 <!-- Reference the relevant semantic models, APIs, or standards. -->
+
+Some of the relevant relevant data models are currently still under development
 
 > TODO: Link or describe the data model, when using big payloads or json-schemas use expandable sections like below:
 
@@ -127,7 +140,7 @@ Place here the description of your semantic model.
 
 | Name | Description | Link to standard |
 | ---- | ----------- | ---------------------- |
-| `CX-XXXX` | This protocol is important when doing the data exchange | [example-link](https://cx-example.com) |
+| `CX-160` | This protocol is important when doing the data exchange | [example-link](https://cx-example.com) |
 | `FX-XXXX` | This protocol is important when doing a vertical integration with shop floor machinery | [example-link](https://fx-example.com) |
 | `ISO XXXX:XXXX` | This protocol is used as | [example-link](https://iso-example.com) |
 
@@ -137,10 +150,6 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 
 - SPDX-License-Identifier: CC-BY-4.0
 - SPDX-FileCopyrightText: 2026 Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. (represented by Fraunhofer IPK)
-- SPDX-FileCopyrightText: 2026 Schaeffler AG
 - SPDX-FileCopyrightText: 2026 Mercedes-Benz
-- SPDX-FileCopyrightText: 2026 German Aerospace Center (DLR)
-- SPDX-FileCopyrightText: 2026 Robert Bosch GmbH
-- SPDX-FileCopyrightText: 2026 Dräxlmaier GmbH & Co. KG
 - SPDX-FileCopyrightText: 2026 Contributors to the Eclipse Foundation
 - Source URL: [https://github.com/eclipse-tractusx/eclipse-tractusx.github.io](https://github.com/eclipse-tractusx/eclipse-tractusx.github.io)
