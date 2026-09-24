@@ -64,7 +64,7 @@ The creation of the KIT was done in close alignment with the [prostep ivip Smart
 
 > TODO: Describe the vision of this KIT. Problem statement
 
-Currently some simulation models that are created on request (e.g. in a customer supplier interaction) require a lot of interaction between these stakeholders to gather the context, the relevant simulation environment or required inputs and test cases. This hinders automation and requires larger efforts in alignment from both supplier and customer. To allow tool-integration and support automation, there needs to be a machine-readable format to directly specify and later on also describe the realized simulation models. But not only the format is relevant - also the trust of the models, there capabilities and the collaborating stakeholder is of utmost importance. Thus the topics of data trust and security as well as crediblity need to be considered.    
+Currently some simulation models that are created on request (e.g. in a customer supplier interaction) require a lot of interaction between these stakeholders to gather the context, the relevant simulation environment or required inputs and test cases. This hinders automation and requires larger efforts in alignment from both supplier and customer. To allow tool-integration and support automation, there needs to be a machine-readable format to directly specify and later on also describe the realized simulation models. But not only the format is relevant - also the trust of the models, there capabilities and the collaborating stakeholder is of utmost importance. Thus the topics of data trust and security as well as credibility need to be considered.
 
 :::info[VISION]
 There needs to be a solution to automatically provide specifications and realizations of simulation models context in a machine readable and trusted way to relevant business partners
@@ -83,16 +83,18 @@ This KIT shall support the Simulation Use Case in Collaborative Engineering in D
 - Explain how to apply the Simulation Use Case and how to gain and verify trust and credibility
 
 :::info[MISSION]
-The Engineering simulation KIT shall enable the automated and trusted exchange of relevant information for the creation and application of simulation models. 
-::: 
+The Engineering simulation KIT shall enable the automated and trusted exchange of relevant information for the creation and application of simulation models.
+:::
 
 For now, the KIT will not focus on the exchange of the simulation itself.
+
 ## Business Context
 
 <!-- Describe the business process or domain this KIT addresses. If a use case describe the use case. -->
 
 The KIT focuses on the Engineering phase of a product or other form of asset and thus the early realization of it. It addresses the simulation before a product was created or handed over to another company in a supplier-customer-relationship.
 
+![Example of the Business process for thermal model exchange](../resources/CX-Sim_FullProcess-Phase_1.svg)
 
 ![Example of the Business process for thermal model exchange](../resources/Process_Example_ThermalModelExchange.png)
 
@@ -100,8 +102,6 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 > We recommend diagrams in drawio (need to be stored in SVG), or you can use mermaid or plant uml
 > As described in TRG 1.04: https://eclipse-tractusx.github.io/docs/release/trg-1/trg-1-04
 > You can also include infografics/ images (which are not diagrams, like above)
-
-
 
 ## Business Value
 
@@ -113,28 +113,45 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 
 ### Geometrical Simulations
 
-**Description**: [Use case description]
+**Description**: This use cases focuses on the definition of geometric simulations. These include for example FEM, CFD or muti-body simulations.
 
 **Actors**: [Actor 1], [Actor 2], [Actor 3]
 
 **Process Flow**:
 
-1. [Step 1 description]
-2. [Step 2 description]
-3. [Step 3 description]
+1. Specification and alignment with supplier
+2. Clarification of Artifacts and constraints
+3. Agreement
+4. Model development
+5. Model provisioning
+6. Model feedback and enhancement
 
-**Business Outcomes**: [Key outcomes]
+**Business Outcomes**: main business outcome are aligned and exchanged simulation models 
 
-**Success Metrics**: [Key metrics]
+**Success Metrics**: low number of manual interactions in exchange, low number of clarification cycles
 
 ### Causal / Acausal Simulation
 
-[Same structure as primary use case]
+**Description**: This use cases focuses on the definition of simulations with a specific modeling approach. Usually this describes how component behavior and interactions are described and solved, causal/acausal/hybrid
 
-### Additional Use Cases
+**Actors**: Customer, Supplier
 
-1. **[Use Case 3]**: [Brief description]
-2. **[Use Case 4]**: [Brief description]
+**Process Flow**:
+
+1. Specification and alignment with supplier
+2. Clarification of Artifacts and constraints
+3. Agreement
+4. Model development
+5. Model provisioning
+6. Model feedback and enhancement
+
+**Business Outcomes**: main business outcome are aligned and exchanged simulation models 
+
+**Success Metrics**: low number of manual interactions in exchange, low number of clarification cycles
+
+### Credibility
+
+**Description**: Beside the actual description of the simulation model, the credibility of these models has to be evaluated.  [prostep ivip SmartSE group](https://www.prostep.org/en/projects/smart-systems-engineering-smartse-gb) described specific parameters how to assess the credibility and hiow to run credible simulations.
 
 ---
 
