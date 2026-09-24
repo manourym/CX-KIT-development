@@ -91,7 +91,7 @@ This KIT focuses on system realization in a complex ecosystem where systems
 In that way, MBSE links:
 
 - [Requirements KIT](../../requirements-kit/adoption-view.md)
-- [Engineering Simulation KIT](../../engineering-simulation-kit/adoption-view/adoption-view.md)
+- Engineering Simulation KIT
 
 Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD)
 
