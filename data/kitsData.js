@@ -1019,16 +1019,10 @@ export const kitsData = {
         new: false
       }
     },
-        {
-<<<<<<< HEAD
+    {
       id: 'engineering-simulation',
       name: 'ENGINEERING SIMULATION KIT',
       logo: RequirementsKitLogo, //until a logo has been defined
-=======
-      id: 'engineering-mbse',
-      name: 'MBSE KIT',
-      logo: RequirementsKitLogo, //until an MBSE logo was created
->>>>>>> 26.12-engineering-mbse-kit
       logoLicencse: {
         type: 'CC-BY-4.0',
         authors: '2026 Eclipse Tractus-X Contributors',
@@ -1037,11 +1031,7 @@ export const kitsData = {
       },
       logoHeight: 100,
       logoWidth: 100,
-<<<<<<< HEAD
       route: '/docs-kits/kits/requirements-kit/adoption-view',
-=======
-      route: '/docs-kits/kits/engineering-mbse-kit/adoption-view',
->>>>>>> 26.12-engineering-mbse-kit
       colors: {
         primary: '#e4a4de',
         gradient: 'linear-gradient(135deg, #e4a4de 0%, #ac23a7 100%)'
@@ -1053,25 +1043,46 @@ export const kitsData = {
       deprecated: false,
       domain: 'Engineering',
       industries: ['automotive'],
-<<<<<<< HEAD
       description: 'Supporting Cross-company simulation model definition and provisioning in the engineering phase.',
       metadata: {
         created: '2026-09-29',
         lastUpdated: '2026-09-29',
-=======
-      description: 'Cross Ecosystem Systems Engineering with modeling support for a better integrated system realization.',
-      metadata: {
-        created: '2026-08-29',
-        lastUpdated: '2026-08-29',
->>>>>>> 26.12-engineering-mbse-kit
         latestVersion: '0.1.0',
         new: false
       }
     },
-<<<<<<< HEAD
-=======
-
->>>>>>> 26.12-engineering-mbse-kit
+    { 
+      id: 'engineering-mbse',
+      name: 'MBSE KIT',
+      logo: RequirementsKitLogo, //until an MBSE logo was created
+      logoLicencse: {
+        type: 'CC-BY-4.0',
+        authors: '2026 Eclipse Tractus-X Contributors',
+        licenseUrl: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/blob/main/static/img/kits/requirements/requirements-kit-raw-logo.svg.license',
+        sourceUrl: 'https://github.com/eclipse-tractusx/eclipse-tractusx.github.io/blob/main/static/img/kits/requirements/requirements-kit-raw-logo.svg'
+      },
+      logoHeight: 100,
+      logoWidth: 100,
+      route: '/docs-kits/kits/engineering-mbse-kit/adoption-view',
+      colors: {
+        primary: '#e4a4de',
+        gradient: 'linear-gradient(135deg, #e4a4de 0%, #ac23a7 100%)'
+      },
+      maturity: {
+        currentLevel: 'Sandbox',
+        graduationStatus: 'draft'
+      },
+      deprecated: false,
+      domain: 'Engineering',
+      industries: ['automotive'],
+      description: 'Cross Ecosystem Systems Engineering with modeling support for a better integrated system realization.',
+      metadata: {
+        created: '2026-08-29',
+        lastUpdated: '2026-08-29',
+        latestVersion: '0.1.0',
+        new: false
+      }
+    },
     {
       id: 'geometry',
       name: 'GEOMETRY KIT',
