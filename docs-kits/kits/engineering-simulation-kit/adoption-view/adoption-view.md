@@ -62,17 +62,13 @@ The creation of the KIT was done in close alignment with the [prostep ivip Smart
 
 ## Vision
 
-> TODO: Describe the vision of this KIT. Problem statement
-
 Currently some simulation models that are created on request (e.g. in a customer supplier interaction) require a lot of interaction between these stakeholders to gather the context, the relevant simulation environment or required inputs and test cases. This hinders automation and requires larger efforts in alignment from both supplier and customer. To allow tool-integration and support automation, there needs to be a machine-readable format to directly specify and later on also describe the realized simulation models. But not only the format is relevant - also the trust of the models, there capabilities and the collaborating stakeholder is of utmost importance. Thus the topics of data trust and security as well as credibility need to be considered.
 
 :::info[VISION]
 There needs to be a solution to automatically provide specifications and realizations of simulation models context in a machine readable and trusted way to relevant business partners
-::: 
+:::
 
 ## Mission
-
-> TODO: Describe the mission of this KIT. Solution statement
 
 This KIT shall support the Simulation Use Case in Collaborative Engineering in Data Ecosystems by addressing multiple points:
 
@@ -126,13 +122,13 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 5. Model provisioning
 6. Model feedback and enhancement
 
-**Business Outcomes**: main business outcome are aligned and exchanged simulation models 
+**Business Outcomes**: main business outcome are aligned and exchanged simulation models
 
 **Success Metrics**: low number of manual interactions in exchange, low number of clarification cycles
 
 ### Causal / Acausal Simulation
 
-**Description**: This use cases focuses on the definition of simulations with a specific modeling approach. Usually this describes how component behavior and interactions are described and solved, causal/acausal/hybrid
+**Description**: This use cases focuses on the definition of simulations with a specific modeling approach. Usually this describes how component behavior and interactions are described and solved (causal/acausal/hybrid). Typical examples for this use case are 1D and 2D simulations that do not require geometrical inputs.
 
 **Actors**: Customer, Supplier
 
@@ -145,13 +141,13 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 5. Model provisioning
 6. Model feedback and enhancement
 
-**Business Outcomes**: main business outcome are aligned and exchanged simulation models 
+**Business Outcomes**: main business outcome are aligned and exchanged simulation models
 
 **Success Metrics**: low number of manual interactions in exchange, low number of clarification cycles
 
 ### Credibility
 
-**Description**: Beside the actual description of the simulation model, the credibility of these models has to be evaluated.  [prostep ivip SmartSE group](https://www.prostep.org/en/projects/smart-systems-engineering-smartse-gb) described specific parameters how to assess the credibility and hiow to run credible simulations.
+**Description**: Beside the actual description of the simulation model, the credibility of these models has to be evaluated.  [prostep ivip SmartSE group](https://www.prostep.org/en/projects/smart-systems-engineering-smartse-gb) described specific parameters how to assess the credibility and how to run credible simulations.
 
 ---
 
@@ -161,17 +157,44 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 
 > TODO: Link or describe the data model, when using big payloads or json-schemas use expandable sections like below:
 
-<details>
-  <summary>Semantic Model Example - click to expand</summary>
+There is currently no released model.
+In the [expert groups development repository](https://github.com/manourym/sldt-semantic-models/tree/engineering.simulation1.0.0/io.catenax.engineering.simulation) there are currently two models:
 
-Place here the description of your semantic model.
+- [simulation.model.minimal](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/1.0.0/SimulationModel.ttl): an approach to include all relevant aspects in one model (including binary)
+- [simulation.shared.sic-core](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/shared.sic_core/1.0.0/SimulationSICCore.ttl): A model for the shared elements a simulation needs (meta data etc.). This is based on the SIC core specification.
+
+<details>
+  <summary>Shared SIC Core</summary>
+
+This is a shared model that can be reused for all use cases.
 
 ```json
 {
-  "key": "value",
-  "object": {...},
-  "array": [...]
-}
+  "simulationTask" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "itemUnderTest" : "camera34-A-sampleV23",
+  "simulationObjective" : [ "DhHYHsh" ],
+  "entityParameter" : [ "fQSuQ" ],
+  "usedSimulationModel" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "usedParameter" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "usedTool" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "taskStatus" : "Checked out: in progress but checked out from data management system"
+
 ```
 
 </details>
