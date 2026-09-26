@@ -94,6 +94,7 @@ import ModularEngineeringKITLogo from "@site/static/img/kits/modular-engineering
 import ModularProductionLogo from "@site/static/img/kits/modular-production/modular-production-kit-raw-logo.svg";
 import OSIMKitLogo from "@site/static/img/kits/osim/osim-kit-raw-logo.svg";
 import RequirementsKitLogo from "@site/static/img/kits/requirements/requirements-kit-raw-logo.svg";
+import MBSEKitLogo from "@site/static/img/kits/engineering-mbse/engineering-mbse-kit-raw-logo.svg";
 import SupplyChainDisruptionLogo from "@site/static/img/kits/supply-chain-disruption-notification/supply-chain-disruption-notification-kit-raw-logo.svg";
 import AgentsKitLogo from "@site/static/img/kits/agents/agents-kit-raw-logo.svg";
 import BehaviorTwinKitLogo from "@site/static/img/kits/behavior-twin/behavior-twin-kit-raw-logo.svg";
@@ -1019,9 +1020,15 @@ export const kitsData = {
       }
     },
         {
+<<<<<<< HEAD
       id: 'engineering-simulation',
       name: 'ENGINEERING SIMULATION KIT',
       logo: RequirementsKitLogo, //until a logo has been defined
+=======
+      id: 'engineering-mbse',
+      name: 'MBSE KIT',
+      logo: RequirementsKitLogo, //until an MBSE logo was created
+>>>>>>> 26.12-engineering-mbse-kit
       logoLicencse: {
         type: 'CC-BY-4.0',
         authors: '2026 Eclipse Tractus-X Contributors',
@@ -1030,7 +1037,11 @@ export const kitsData = {
       },
       logoHeight: 100,
       logoWidth: 100,
+<<<<<<< HEAD
       route: '/docs-kits/kits/requirements-kit/adoption-view',
+=======
+      route: '/docs-kits/kits/engineering-mbse-kit/adoption-view',
+>>>>>>> 26.12-engineering-mbse-kit
       colors: {
         primary: '#e4a4de',
         gradient: 'linear-gradient(135deg, #e4a4de 0%, #ac23a7 100%)'
@@ -1042,14 +1053,25 @@ export const kitsData = {
       deprecated: false,
       domain: 'Engineering',
       industries: ['automotive'],
+<<<<<<< HEAD
       description: 'Supporting Cross-company simulation model definition and provisioning in the engineering phase.',
       metadata: {
         created: '2026-09-29',
         lastUpdated: '2026-09-29',
+=======
+      description: 'Cross Ecosystem Systems Engineering with modeling support for a better integrated system realization.',
+      metadata: {
+        created: '2026-08-29',
+        lastUpdated: '2026-08-29',
+>>>>>>> 26.12-engineering-mbse-kit
         latestVersion: '0.1.0',
         new: false
       }
     },
+<<<<<<< HEAD
+=======
+
+>>>>>>> 26.12-engineering-mbse-kit
     {
       id: 'geometry',
       name: 'GEOMETRY KIT',
