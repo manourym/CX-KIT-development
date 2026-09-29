@@ -90,11 +90,24 @@ For now, the KIT will not focus on the exchange of the simulation itself.
 
 The KIT focuses on the Engineering phase of a product or other form of asset and thus the early realization of it. It addresses the simulation before a product was created or handed over to another company in a supplier-customer-relationship.
 
-![Example of the Business process for thermal model exchange](../resources/CX-Sim_FullProcess-Phase_1.svg)
+The following flow defines the common exchange:
 
-![Example of the Business process for thermal model exchange](../resources/CX-Sim_FullProcess-Phase_1.svg)
+```mermaid
+graph LR
+  A["A) Request definition and provision to partner"]
+  B["B) Request confirmation"]
+  C["C) Releases/Agreed specification"]
+  D["D) Model provision"]
+  E["E) Simulation and Feedback"]
+  F["F) Enhance model"]
+  G["G) Model usage"]
+  A --> B --> C --> D --> E --> F --> G
 
-![Example of the Business process for thermal model exchange](../resources/Process_Example_ThermalModelExchange.png)
+```
+
+each step can be broken down into sub-steps (see development view). More important is, that each of these points requires interaction between supplier and customer - and can have numerous iterations, especially if not done systematically.
+
+The KIT focuses on the steps A-C as well as E+F, leaving the actual model exchange up to other initiatives.
 
 ## Business Value
 
@@ -263,7 +276,6 @@ In that regard [MIC-Core](https://mic-core.github.io/MIC-Core/main/#_introductio
 
 regarding standards and Simulation the [Functional Mock-up Interface (FMI)](https://fmi-standard.org/) shall also be named.
 It is "[...] a free [modelica] standard that defines an interface to exchange dynamic models using a combination of XML files, binaries and C code."^[1] THis standard gives and example how the actual models (especially for the use case of causal/acausal simulations) can be described and exchanged.
-
 
 | Name | Description | Link to standard |
 | ---- | ----------- | ---------------------- |
