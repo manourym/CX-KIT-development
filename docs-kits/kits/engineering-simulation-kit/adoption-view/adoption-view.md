@@ -92,12 +92,9 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 
 ![Example of the Business process for thermal model exchange](../resources/CX-Sim_FullProcess-Phase_1.svg)
 
-![Example of the Business process for thermal model exchange](../resources/Process_Example_ThermalModelExchange.png)
+![Example of the Business process for thermal model exchange](../resources/CX-Sim_FullProcess-Phase_1.svg)
 
-> TODO: Describe the relevant business context and stakeholders.
-> We recommend diagrams in drawio (need to be stored in SVG), or you can use mermaid or plant uml
-> As described in TRG 1.04: https://eclipse-tractusx.github.io/docs/release/trg-1/trg-1-04
-> You can also include infografics/ images (which are not diagrams, like above)
+![Example of the Business process for thermal model exchange](../resources/Process_Example_ThermalModelExchange.png)
 
 ## Business Value
 
@@ -164,13 +161,12 @@ As test were yet not conducted there can not be given a defined answer on the bu
 
 <!-- Reference the relevant semantic models, APIs, or standards. -->
 
-> TODO: Link or describe the data model, when using big payloads or json-schemas use expandable sections like below:
+There is currently no released model for engineering simulations in the official [tractus-x sldt](https://github.com/eclipse-tractusx/sldt-semantic-models/tree/main).
+In the [expert groups development repository](https://github.com/manourym/sldt-semantic-models) there are currently three models under development:
 
-There is currently no released model.
-In the [expert groups development repository](https://github.com/manourym/sldt-semantic-models/tree/engineering.simulation1.0.0/io.catenax.engineering.simulation) there are currently two models:
-
-- [simulation.model.minimal](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/1.0.0/SimulationModel.ttl): an approach to include all relevant aspects in one model (including binary)
-- [simulation.shared.sic-core](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/shared.sic_core/1.0.0/SimulationSICCore.ttl): A model for the shared elements a simulation needs (meta data etc.). This is based on the SIC core specification.
+- [``urn:samm:io.catenax.engineering.simulation.model.minimal``](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/1.0.0/SimulationModel.ttl): an approach to include all relevant aspects in one model (including binary). This has been developed in an early phase and is currently rather legacy for reusing elements.
+- [``urn:samm:io.catenax.engineering.simulation.shared.sic-core``](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/shared.sic_core/1.0.0/SimulationSICCore.ttl): A model for the shared elements a simulation needs (meta data etc.). This is based on the [SIC core](https://mic-core.github.io/SIC-Core/main/) specification. It shall be used as common baseline for the other use cases.
+- [``urn:samm:io.catenax.engineering.simulation.geometrical``](https://github.com/manourym/sldt-semantic-models/blob/engineering.simulation1.0.0/io.catenax.engineering.simulation/geometrical/1.0.0/GeometricalSimulationSpecification.ttl): A model focusing on the [geometry use case](#geometrical-simulations). It adds the ``physicalBoundaries`` and ``acceptanceCirteria`` that where demanded by experts in the geometrical simulation use case.
 
 <details>
   <summary>Shared SIC Core</summary>
@@ -202,8 +198,57 @@ This is a shared model that can be reused for all use cases.
     "subVersion" : "1.0.0",
     "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
   } ],
-  "taskStatus" : "Checked out: in progress but checked out from data management system"
+  "taskStatus" : "Checked out: in progress but checked out from data management system",
+  "testCaseRequirement" : [ "xcQlZ27EYm" ],
+  "testCase" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ]
+```
 
+</details>
+
+<details>
+  <summary>Geometric Simulation model</summary>
+
+This model is the current baseline for discussion regarding the geometric simulation use case.
+
+```json
+{
+  "simulationTask" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "itemUnderTest" : "camera34-A-sampleV23",
+  "simulationObjective" : [ "DhHYHsh" ],
+  "entityParameter" : [ "fQSuQ" ],
+  "usedSimulationModel" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "usedParameter" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "usedTool" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "taskStatus" : "Checked out: in progress but checked out from data management system",
+  "testCaseRequirement" : [ "xcQlZ27EYm" ],
+  "testCase" : [ {
+    "subName" : "aeroplaneTT",
+    "subVersion" : "1.0.0",
+    "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
+  } ],
+  "acceptanceCriteria": [ "Ge" ],
+  "physicalBoundaries": [ "cKsf" ]
+}
 ```
 
 </details>
@@ -212,13 +257,20 @@ This is a shared model that can be reused for all use cases.
 
 <!-- Provide a list of standards this KIT. -->
 
-> TODO: Add the standards or external documetantion
+There is currently no Catena-X or other data space related standard known to the group maintaining this KIT.
+As already mentioned, the [SIC-Core specification](https://mic-core.github.io/SIC-Core/main/) can be used as an example. While not being a standard it can be used for the description of meta data for simulation exchange.
+In that regard [MIC-Core](https://mic-core.github.io/MIC-Core/main/#_introduction) needs to be mentioned as baseline to consider. It addresses directly the model and thus can be a baseline for the exchange. The current minimal model is based on this specification.
+
+regarding standards and Simulation the [Functional Mock-up Interface (FMI)](https://fmi-standard.org/) shall also be named.
+It is "[...] a free [modelica] standard that defines an interface to exchange dynamic models using a combination of XML files, binaries and C code."^[1] THis standard gives and example how the actual models (especially for the use case of causal/acausal simulations) can be described and exchanged.
+
 
 | Name | Description | Link to standard |
 | ---- | ----------- | ---------------------- |
-| `CX-XXXX` | This protocol is important when doing the data exchange | [example-link](https://cx-example.com) |
-| `FX-XXXX` | This protocol is important when doing a vertical integration with shop floor machinery | [example-link](https://fx-example.com) |
-| `ISO XXXX:XXXX` | This protocol is used as | [example-link](https://iso-example.com) |
+| `SIC-Core specification` | This Specification defines simulation meta data and is reused in this KIT | [SIC-Core specification](https://mic-core.github.io/SIC-Core/main/) |
+| `FMI` | The Functional Mock-up Interface (FMI) is a free standard that defines a container and an interface to exchange dynamic models using a combination of XML files, binaries and C code, distributed as a ZIP file. | [FMI standard](https://fmi-standard.org/docs/main/) |
+
+[1]: https://github.com/modelica/fmi-standard
 
 ## NOTICE
 
