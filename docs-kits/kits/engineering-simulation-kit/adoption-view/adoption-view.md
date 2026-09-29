@@ -103,7 +103,16 @@ The KIT focuses on the Engineering phase of a product or other form of asset and
 
 <!-- Describe why this KIT is attractive for service providers to be implemented -->
 
-> TODO: Describe the business value of this KIT and why it should be implemented
+This KIT support in the faster (in the best case automatic) alignment of simulation models. Additionally, it shows, how trust in these models can be generated and verified.
+
+Service providers and Data Provider can in that way
+
+- define their specifications for simulation models (e.g. scope of the simulation, test cases) and
+- describe realizations of these specifications (e.g. used tools)
+
+Service Provider and Data Consumer can also easier identify the relevant inputs and thus better create simulation models or use simulation models in a collaborative engineering use case.
+
+As test were yet not conducted there can not be given a defined answer on the business value for credibility, but it is assumed, that in the future the KIT can support in raising trust in simulation models and executions / results in data ecosystems.
 
 ## Use Cases
 
