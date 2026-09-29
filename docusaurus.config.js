@@ -12,10 +12,9 @@ const announcementBarId = 'announcementBar-v26.09';
 const config = {
   title: 'Eclipse Tractus-X',
   tagline: '',
-  url: 'https://eclipse-tractusx.github.io',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenAnchors: 'throw',
+url: process.env.SITE_URL || 'https://eclipse-tractusx.github.io',
+baseUrl: process.env.BASE_URL || '/',
+onBrokenLinks: process.env.BASE_URL ? 'warn' : 'throw',  onBrokenAnchors: 'throw',
   favicon: 'img/logo_tractus-x-min.ico',
 
   // Docusaurus hides the announcement bar before React loads if the visitor closed
