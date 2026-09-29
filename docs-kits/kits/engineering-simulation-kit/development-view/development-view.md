@@ -1,7 +1,7 @@
 ---
 id: development-view-engineering-simulation
 title: Development View
-description: 'Development View <KIT NAME> KIT'
+description: 'Development View Engineering Simulation KIT'
 sidebar_position: 3
 ---
 
@@ -38,54 +38,107 @@ KIT LOGO END
 
 <!-- High-level diagram of the technical approach. -->
 
-> TODO: Describe the technical architecture and key design decisions.
-> We recommend diagrams in drawio (need to be stored in SVG), or you can use mermaid or plant uml
-> As described in TRG 1.04: https://eclipse-tractusx.github.io/docs/release/trg-1/trg-1-04.
-> Explain which components are involved in the KIT data exchange or use case.
-> Keep the source code so it can be included in the final KIT version in Markdown.
-> Example:
 
 ```mermaid
-graph LR
-    subgraph External Systems
-        A[Client Application]
-        B[External Service]
+graph TD
+    subgraph Customer
+        Ac[Simulation System]
+    
+        subgraph Assets
+            SpecC(Specification asset)
+        end
+    
+        subgraph Infrastructure
+            DSPc["DSP Component (e.g. EDC)"]
+            DTRc[DTR]
+            Bc["Backend Systems"]
+        end  
+    end
+
+    subgraph Supplier
+
+        As[Simulation System]
+
+        subgraph AssetsSub
+            SpecS(Specification asset)
+            SimS(Simulation Model)
+        end
+    
+        subgraph InfrastructureSub
+            DSPs["DSP Component (e.g. EDC)"]
+            DTRs[DTR]
+        end  
     end
     
-    subgraph KIT Components
-        C[API Gateway]
-        D[Core Service]
-    end
-    
-    subgraph Infrastructure
-        F[Database]
-    end
-    
-    A -->|HTTPS| C
-    B -->|Protocol| C
-    C --> D
-    D --> F
+    Ac --"1. defines" --> SpecC
+    SpecC --->|"1. is stored"| Bc
+
+    Bc --> |"2. Store asset in DTR"| DTRc
+
+    Bc -->|"3. Register asset"| DSPc 
+    DTRc -->|"3. Register asset"| DSPc
+    DSPc <--"4. negotionate and exchange"--> DSPs
+
+
+    As --"5. defines" --> SpecS
+    As --"5. defines" --> SimS
+
+    SpecS -->|"6. Register asset"| DSPs 
+    SimS -->|"6. (optional) Register asset"| DSPs
+
 ```
 
-> TODO: Text description of the diagram.
+The diagrams shows involved systems.
+Both sides need DSP conformant connectors as for example the EDC.
+The register there the specification, that can be directly driven by Solution providers.
+The answer to the request is also done through the DSP connector a model is created and aligned. In the following, the Phases of the adoption view shall be better explained.
 
-## Application Programming Interfaces (API)
+### Detailed Phases
 
-> TODO: If applicable API specifications.
-> Detailed APIs can be included as swagger / open api specs
-> As described in TRG 1.08: https://eclipse-tractusx.github.io/docs/release/trg-1/trg-1-08
-> Will be hosted in API HUB: https://eclipse-tractusx.github.io/api-hub/
+In the business context the overall phases where already presented. To develop fitting solutions the following detail level shall be considered for the different phases (wih a Catena-X label for the actual exchange in the network):
 
+#### Phase A: Specification / Definition
+
+In this phase, the actual definition of the specification is done.
+Depending on the [Use Case](../adoption-view/adoption-view.md#use-casses) the SIC-core base specification is used with a specific profile. Usually relevant in that phase are:
+
+- model scope / purpose
+- acceptance criterial
+- physical boundary conditions
+
+![Phase A: Specification / Definition](../resources/CX-Sim_FullProcess-Phase1.svg)
+
+#### Phase B: Confirmation
+
+This step includes the review and answer to the specification. It can be somehow compared to the Requirements Engineering approach.
+The required parameter need to be defined here as well.
+
+![Phase B: Confirmation](../resources/CX-Sim_FullProcess-Phase2.svg)
+
+#### Phase C: Agreement / Release
+
+Depending on the feedback in the previous step, there need to be some alignment steps between customer and supplier that need to be resolved. After that, the specification can be released. Especially important is to lock the release for further validation and verification steps. The same data as in Step A is used here.
+
+![Phase C: Agreement / Release](../resources/CX-Sim_FullProcess-Phase3.svg)
+
+#### Phase D: Provisioning
+
+Thi steps is currently not directly addressed by the KIT.
+It focuses on the development until actual provisioning of the simulation  model.
+
+![Phase D: Provisioning](../resources/CX-Sim_FullProcess-Phase4.svg)
+
+#### Phase E + F: Feedback and Enhancement
+
+Finally, the feedback has to be aggregated and the model has to be enhanced. After these topics are resolved, the actual model transfer can happen
+
+![Phase E + F: Feedback and Enhancement](../resources/CX-Sim_FullProcess-Phase5.svg)
 
 ## Protocols
 
-<!-- Provide a minimal code snippet or step-by-step guide. -->
-
-> TODO: Add the protocols which you are using for the data exchange.
-
 | Name | Description | Link to Documentation |
-| ---- | ----------- | ----------------------|
-| `Protocol Name` | This protocol is important when doing the data exchange | [example-link](https://example.com) |
+| ---- | ----------- | --------------------- |
+| `Data Space Protocol` | Main protocol for exchange in data ecosystems | [Eclipse DSP](https://eclipse-dataspace-protocol-base.github.io/DataspaceProtocol/HEAD/) |
 
 ## NOTICE
 
