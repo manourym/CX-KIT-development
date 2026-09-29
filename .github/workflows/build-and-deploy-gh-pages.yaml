@@ -23,7 +23,7 @@ name: Build and deploy gh-pages
 on:
   push:
     branches:
-      - main
+      - pages
 
 jobs:
   deploy:
@@ -42,6 +42,9 @@ jobs:
 
       - name: Build website
         run: npm run build
+        env:
+          BASE_URL: /CX-KIT-development/
+          SITE_URL: https://manourym.github.io
 
       # Docs: https://github.com/peaceiris/actions-gh-pages#%EF%B8%8F-docusaurus
       - name: Deploy to GitHub Pages
