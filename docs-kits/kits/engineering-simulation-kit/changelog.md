@@ -34,11 +34,14 @@ import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
 KIT LOGO END
 -->
 
-## [0.1.0] - 2026-08-27
+## [0.1.0] - 2026-09-30
 
 ### Added
 
 - Initial version of the KIT
+- Added Use cases
+- Added first models for simulation
+- Added Process flow
 
 ### Changed
 
