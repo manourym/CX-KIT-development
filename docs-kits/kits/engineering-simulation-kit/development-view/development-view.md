@@ -40,6 +40,11 @@ KIT LOGO END
 
 
 ```mermaid
+---
+config:
+    layout: elk
+---
+
 graph TD
     subgraph Customer
         Ac[Simulation System]
@@ -56,6 +61,10 @@ graph TD
     end
 
     subgraph Supplier
+        subgraph InfrastructureSub
+            DSPs["DSP Component (e.g. EDC)"]
+            DTRs[DTR]
+        end  
 
         As[Simulation System]
 
@@ -64,10 +73,6 @@ graph TD
             SimS(Simulation Model)
         end
     
-        subgraph InfrastructureSub
-            DSPs["DSP Component (e.g. EDC)"]
-            DTRs[DTR]
-        end  
     end
     
     Ac --"1. defines" --> SpecC
@@ -77,14 +82,19 @@ graph TD
 
     Bc -->|"3. Register asset"| DSPc 
     DTRc -->|"3. Register asset"| DSPc
-    DSPc <--"4. negotionate and exchange"--> DSPs
+    DSPc <--"4. negotiate and exchange"--> DSPs
 
+    DSPs -- "4. gets Asset" --> As
 
     As --"5. defines" --> SpecS
     As --"5. defines" --> SimS
 
     SpecS -->|"6. Register asset"| DSPs 
     SimS -->|"6. (optional) Register asset"| DSPs
+    SpecS -->|"6. Register asset"| DTRs 
+    SimS -->|"6. (optional) Register asset"| DTRs
+    DTRs -->|"6. Register asset"| DSPs 
+
 
 ```
 

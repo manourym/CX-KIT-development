@@ -128,9 +128,9 @@ As test were yet not conducted there can not be given a defined answer on the bu
 
 ### Geometrical Simulations
 
-**Description**: This use cases focuses on the definition of geometric simulations. These include for example FEM, CFD or muti-body simulations.
+**Description**: This use cases focuses on the definition of geometric simulations. These include for example FEM, CFD or multi-body simulations.
 
-**Actors**: [Actor 1], [Actor 2], [Actor 3]
+**Actors**: Customer, Supplier
 
 **Process Flow**:
 
