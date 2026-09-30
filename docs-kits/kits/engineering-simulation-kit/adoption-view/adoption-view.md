@@ -105,7 +105,7 @@ graph LR
 
 ```
 
-each step can be broken down into sub-steps (see development view). More important is, that each of these points requires interaction between supplier and customer - and can have numerous iterations, especially if not done systematically.
+each step can be broken down into sub-steps (see [development view](../development-view/development-view.md#detailed-phases)). More important is, that each of these points requires interaction between supplier and customer - and can have numerous iterations, especially if not done systematically.
 
 The KIT focuses on the steps A-C as well as E+F, leaving the actual model exchange up to other initiatives.
 
@@ -168,6 +168,37 @@ As test were yet not conducted there can not be given a defined answer on the bu
 
 **Description**: Beside the actual description of the simulation model, the credibility of these models has to be evaluated.  [prostep ivip SmartSE group](https://www.prostep.org/en/projects/smart-systems-engineering-smartse-gb) described specific parameters how to assess the credibility and how to run credible simulations.
 
+The [Smart SE Recommendation V4](https://www.prostep.org/fileadmin/prod-pay-download-8c1d/PSI_11_V4_SmartSE_Part_H_CSP.pdf) describes a process framework of 4 Layer:
+
+```mermaid
+graph TD
+PDP[Product Development Process]
+CDP["Credible Decision Process (CDP)"]
+CSP["Credible Simulation Process (CSP)"]
+CMP["Credible Modeling Process (CMP)"]
+
+PDP --needs decision-->CDP
+CDP --Simulation Request --> CSP
+CSP --Modeling Request --> CMP
+
+```
+
+This KIT focuses on the Credible Simulation Process (CSP).
+This step consists of various phases:
+
+1. **Analysis** of Simulation Task
+2. **Definition** of Simulation Requirements
+3. **Design** (Specification for Simulation Setup)
+4. **Implementation** (Simulation Models, Parameters, Tests, Simulation Environment)
+5. Simulation **Execution**
+6. **Evaluation** (of Simulation Results & Assure Quality)
+7. **Fulfillment** (of Modelling Objectives)
+
+By using the SIC-core based `urn:samm:io.catenax.engineering.simulation.shared.sic-core` the input can be directly defined, provided and aligned in the data ecosystem in a machine-readable way.
+The simulation request (trigger for the CSP) can already be me described with the relevant input with the shared model. If it has a use case specification, further parameters can be given with a derived use case model such as `urn:samm:io.catenax.engineering.simulation.geometrical`. These can then also be further refined for the Definition and Design.
+
+The implementation (4), execution (5), evaluation (6) and fulfillment is not directly supported by this KIT and should be done within the companies. The parameters from the previous steps can be used as inputs to validate against - yet as long as testing is in such an early stage there is no finalized approach to handle this in data spaces in this KIT.
+
 ---
 
 ## Semantic Models / Data Model
@@ -218,6 +249,7 @@ This is a shared model that can be reused for all use cases.
     "subVersion" : "1.0.0",
     "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
   } ]
+}
 ```
 
 </details>
