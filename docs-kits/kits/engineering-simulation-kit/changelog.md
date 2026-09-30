@@ -1,7 +1,7 @@
 ---
-id: changelog-sandbox-kit-template
+id: changelog-engineering-simulation
 title: Changelog
-description: 'Changelog <KIT NAME> KIT'
+description: 'Changelog Engineering Simulation KIT'
 sidebar_position: 1
 ---
 
