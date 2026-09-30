@@ -89,16 +89,7 @@ For that, the KIT integrates different other KITs that are required to achieve t
 These include (but are not limited to):
 
 <RelatedKitsGallery
-  kitIds={['requirements', 'geometry', 'agents']}
-  extraKits={[
-    {
-      name: 'Engineering Simulation KIT',
-      description: 'Simulation-based realization & validation',
-      icon: '🧪',
-      chip: 'In Development',
-      route: undefined
-    }
-  ]}
+  kitIds={['requirements', 'geometry', 'engineering-simulation','agents']}
 />
 
 Additionally, which is not defined as an own KIT but of utmost importance is the Digital Engineering Master Data (DEMD).

@@ -34,7 +34,7 @@ import Kit3DLogo from '@site/src/components/2.0/Kit3DLogo';
 KIT LOGO END
 -->
 
-## [0.1.0] - YYYY-MM-DD
+## [0.1.0] - 2026-09-30
 
 ### Added
 
@@ -54,10 +54,6 @@ This work is licensed under the [CC-BY-4.0](https://creativecommons.org/licenses
 
 - SPDX-License-Identifier: CC-BY-4.0
 - SPDX-FileCopyrightText: 2026 Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. (represented by Fraunhofer IPK)
-- SPDX-FileCopyrightText: 2026 Schaeffler AG
 - SPDX-FileCopyrightText: 2026 Mercedes-Benz
-- SPDX-FileCopyrightText: 2026 German Aerospace Center (DLR)
-- SPDX-FileCopyrightText: 2026 Robert Bosch GmbH
-- SPDX-FileCopyrightText: 2026 Dräxlmaier GmbH & Co. KG
 - SPDX-FileCopyrightText: 2026 Contributors to the Eclipse Foundation
 - Source URL: [https://github.com/eclipse-tractusx/eclipse-tractusx.github.io](https://github.com/eclipse-tractusx/eclipse-tractusx.github.io)
