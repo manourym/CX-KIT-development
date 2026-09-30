@@ -105,7 +105,7 @@ graph LR
 
 ```
 
-each step can be broken down into sub-steps (see development view). More important is, that each of these points requires interaction between supplier and customer - and can have numerous iterations, especially if not done systematically.
+each step can be broken down into sub-steps (see [development view](../development-view/development-view.md#detailed-phases)). More important is, that each of these points requires interaction between supplier and customer - and can have numerous iterations, especially if not done systematically.
 
 The KIT focuses on the steps A-C as well as E+F, leaving the actual model exchange up to other initiatives.
 
@@ -249,6 +249,7 @@ This is a shared model that can be reused for all use cases.
     "subVersion" : "1.0.0",
     "subIdentifier" : "urn:uuid:48878d48-6f1d-47f5-8ded-a441d0d879df"
   } ]
+}
 ```
 
 </details>
